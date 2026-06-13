@@ -66,7 +66,9 @@ fun MessageInput(onMessage: (String) -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(16.dp)
+            .background(color = Color.Transparent)
+        ,
         verticalAlignment = Alignment.CenterVertically
     ) {
         OutlinedTextField(
@@ -127,7 +129,7 @@ fun MessageRow(messageModel: MessageModel) {
             modifier = Modifier
                 .padding(8.dp)
                 .clip(RoundedCornerShape(16.dp))
-                .background(if (isUser) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.secondary)
+                .background(if (isUser) MaterialTheme.colorScheme.primary  else MaterialTheme.colorScheme.secondary  )
                 .padding(12.dp)
         ) {
 
