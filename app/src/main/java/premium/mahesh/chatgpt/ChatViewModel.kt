@@ -13,7 +13,7 @@ class ChatViewModel : ViewModel() {
 
     private val generativeModel : GenerativeModel = GenerativeModel(
         modelName = "gemini-3.5-flash" ,
-        apiKey = BuildConfig.GEMINI_API_KEY,
+        apiKey = Constant.apikey
     )
 
     fun sendMessage(question : String){
